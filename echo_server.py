@@ -8,4 +8,4 @@ def echo(message: str) -> str:
     return message
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run()# Build trigger: 1752592586
