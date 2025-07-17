@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "echo": {
+    "echo-1": {
       "type": "http",
-      "url": "https://fastmcp-coolness-echo.dev.fastmcp.app/mcp/"
+      "url": "https://fastmcp-coolness-echo-2.dev.fastmcp.app/mcp/"
     }
   }
 }
