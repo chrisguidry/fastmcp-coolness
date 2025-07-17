@@ -1,11 +1,15 @@
+import logging
 from fastmcp import FastMCP
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 mcp = FastMCP("Echo Server")
 
 @mcp.tool
 def echo(message: str) -> str:
     """Repeat the input message back to the caller."""
-    print(f"Echo server received: {message}")
+    logger.info(f"Echo server received: {message}")
     return message
 
 if __name__ == "__main__":
@@ -24,3 +28,4 @@ if __name__ == "__main__":
 # Build trigger: 1752767418
 # Build trigger: 1752768461
 # Build trigger: 1752768708
+# Build trigger: 1752769369
