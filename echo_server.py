@@ -7,10 +7,10 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 try:
-    import docket
-    logger.info(f"docket version: {docket.__version__}")
+    import measured
+    logger.info(f"measured version: {measured.__version__}")
 except ImportError:
-    logger.info("Could not import docket")
+    logger.info("Could not import measured")
 
 mcp = FastMCP("Echo Server")
 
