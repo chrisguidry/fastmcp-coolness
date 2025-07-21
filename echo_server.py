@@ -6,6 +6,12 @@ from fastmcp.server.dependencies import get_http_headers
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+try:
+    import docket
+    logger.info(f"docket version: {docket.__version__}")
+except ImportError:
+    logger.info("Could not import docket")
+
 mcp = FastMCP("Echo Server")
 
 @mcp.tool
