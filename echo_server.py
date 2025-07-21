@@ -1,6 +1,7 @@
 import logging
 import os
 from fastmcp import FastMCP
+from fastmcp.server.dependencies import get_http_headers
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -65,3 +66,4 @@ if __name__ == "__main__":
 # Build trigger: 1752872341
 # Build trigger: 1753103932
 # Build trigger: 1753107657
+# Build trigger: 1753107865
