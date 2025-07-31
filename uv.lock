@@ -238,6 +238,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "fastmcp" },
+    { name = "mcp" },
 ]
 
 [package.dev-dependencies]
@@ -247,7 +248,10 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "fastmcp" }]
+requires-dist = [
+    { name = "fastmcp", specifier = ">=2.10" },
+    { name = "mcp", specifier = ">=1.11.0" },
+]
 
 [package.metadata.requires-dev]
 dev = [
