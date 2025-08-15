@@ -31,4 +31,4 @@ Thumbs.db
 .env
 dist/
 build/
-*.egg-info/
+*.egg-info/# Test commit Fri Aug 15 11:07:01 AM EDT 2025
